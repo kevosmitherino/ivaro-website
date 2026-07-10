@@ -556,11 +556,11 @@ ul { list-style: none; }
 .coming-soon-box h3 {
   font-family: var(--font-head);
   font-size: 1.5rem;
-  color: var(--white);
+  color: var(--navy);
   margin-bottom: 12px;
 }
 .coming-soon-box p {
-  color: rgba(255,255,255,0.8);
+  color: var(--text-soft);
   font-size: 1rem;
   line-height: 1.6;
   max-width: 320px;
@@ -602,7 +602,7 @@ ul { list-style: none; }
 }
 
 .footer-brand img {
-  height: 56px;
+  height: 80px;
   width: auto;
   margin-bottom: 12px;
   filter: brightness(0) invert(1);
