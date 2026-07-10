@@ -116,7 +116,7 @@ ul { list-style: none; }
 }
 
 .brand img {
-  height: 44px;
+  height: 64px;
   width: auto;
   object-fit: contain;
 }
@@ -545,6 +545,28 @@ ul { list-style: none; }
   font-size: 1rem;
 }
 
+.coming-soon-box {
+  text-align: center;
+  padding: 48px 32px;
+}
+.coming-soon-icon {
+  font-size: 3rem;
+  margin-bottom: 16px;
+}
+.coming-soon-box h3 {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  color: var(--white);
+  margin-bottom: 12px;
+}
+.coming-soon-box p {
+  color: rgba(255,255,255,0.8);
+  font-size: 1rem;
+  line-height: 1.6;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
 .watchlist-form {
   background: var(--white);
   border-radius: var(--radius-lg);
@@ -580,7 +602,7 @@ ul { list-style: none; }
 }
 
 .footer-brand img {
-  height: 36px;
+  height: 56px;
   width: auto;
   margin-bottom: 12px;
   filter: brightness(0) invert(1);
@@ -661,7 +683,7 @@ ul { list-style: none; }
   .section-pad { padding: 64px 0; }
 
   .navbar { top: 12px; width: min(100% - 24px, 1160px); }
-  .brand img { height: 36px; }
+  .brand img { height: 52px; }
   .hero { padding-top: 110px; }
   .hero-copy h1 { font-size: 2.2rem; }
   .feature-pills { grid-template-columns: 1fr; }
