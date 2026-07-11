@@ -38,6 +38,14 @@
       "@type": "EducationalAudience",
       "educationalRole": "teacher"
     },
+    "featureList": [
+      "Lesson Studio – standards-aligned lesson planning in minutes",
+      "Deliverable Studio – exit tickets, quizzes, worksheets, and classroom materials on demand",
+      "Grading Studio – FERPA/COPPA-compliant AI-assisted grading and feedback",
+      "Project Studio – project-based learning planning and rubrics",
+      "Intervention Studio – targeted small-group and MTSS/RTI support (coming soon)",
+      "Ivaro Instructional Partner – always-available AI instructional coaching and teacher wellness support"
+    ],
     "offers": {
       "@type": "Offer",
       "price": "0",
@@ -121,7 +129,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Fraunces:ital,wght@0,600;1,500;1,600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -163,12 +171,13 @@
         <div class="hero-copy reveal">
           <div class="eyebrow-pill">Built for overwhelmed K–8 teachers</div>
           <h1>Get your <span class="hw">time</span>,<br><span class="hw">clarity</span>, and<br><span class="hw">confidence</span> back.</h1>
+          <p class="hero-slogan">Teach Brilliantly</p>
           <p class="hero-subtitle">Ivaro simplifies lesson planning, grading, and student support — so everything you need to teach effectively lives in one place.</p>
           <div class="feature-pills">
-            <div class="pill"><span class="pill-dot"></span>Plan lessons in minutes</div>
-            <div class="pill"><span class="pill-dot"></span>Differentiate with confidence</div>
-            <div class="pill"><span class="pill-dot"></span>Generate assignments instantly</div>
-            <div class="pill"><span class="pill-dot"></span>Support every learner</div>
+            <a class="pill" href="#lesson-studio"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 12c-2.5-2-6-3-10-3v20c4 0 7.5 1 10 3 2.5-2 6-3 10-3V9c-4 0-7.5 1-10 3Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></span>Plan lessons in minutes</a>
+            <a class="pill" href="#lesson-studio"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8a9 9 0 0 0-5 16.5V27a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2.5A9 9 0 0 0 20 8Z" stroke="currentColor" stroke-width="3" stroke-linejoin="round"/></svg></span>Differentiate with confidence</a>
+            <a class="pill" href="#deliverable-studio"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="12" y="7" width="18" height="22" rx="2" stroke="currentColor" stroke-width="3"/><path d="M16 14h10M16 19h10M16 24h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></span>Generate assignments instantly</a>
+            <a class="pill" href="#intervention-studio"><span class="pill-icon" aria-hidden="true"><svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="3"/><circle cx="20" cy="20" r="4" fill="currentColor"/></svg></span>Support every learner</a>
           </div>
           <div class="hero-actions">
             <a class="btn btn-primary" href="#watchlist">Watchlist Coming Soon</a>
@@ -201,43 +210,257 @@
     </section>
 
     <!-- FEATURES -->
+    <!-- Each .feature-link currently points to #watchlist. TODO: once app.ivaro.ai is live, point these to the matching studio inside the app instead. -->
     <section class="features section-pad" id="features">
       <div class="container">
         <div class="section-heading reveal">
-          <p class="eyebrow">What Ivaro does</p>
+          <p class="eyebrow">The Ivaro Teacher Suite</p>
           <h2>Everything teachers need.<br>Finally working together.</h2>
+          <p class="section-lead">One connected workspace to plan, create, assess, support, and improve instruction — giving teachers their time, clarity, and confidence back.</p>
         </div>
         <div class="features-grid">
-          <article class="feature-card reveal">
-            <div class="feature-icon">📋</div>
-            <h3>Lesson Planning</h3>
-            <p>Create standards-aligned lesson plans in minutes — not hours. Ivaro handles structure so you can focus on teaching.</p>
+
+          <article class="feature-card reveal" id="lesson-studio">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 12c-2.5-2-6-3-10-3v20c4 0 7.5 1 10 3 2.5-2 6-3 10-3V9c-4 0-7.5 1-10 3Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M20 12v20" stroke="currentColor" stroke-width="2"/></svg>
+            </div>
+            <h3>Lesson Studio</h3>
+            <p class="feature-desc">Standards-aligned lessons, built in minutes instead of hours.</p>
+            <ul class="feature-highlights">
+              <li>Multi-day &amp; unit planning</li>
+              <li>Built-in differentiation &amp; accommodations</li>
+            </ul>
+            <details class="feature-more">
+              <summary>See everything in Lesson Studio <span class="chevron" aria-hidden="true"></span></summary>
+              <ul class="feature-full-list">
+                <li>Intelligent Lesson Planning Assistant</li>
+                <li>Multi-day and unit planning</li>
+                <li>Standards alignment</li>
+                <li>Vertical alignment</li>
+                <li>Lesson customization</li>
+                <li>Engagement strategies</li>
+                <li>Learning objectives generator</li>
+                <li>Essential questions</li>
+                <li>Differentiation support</li>
+                <li>Accommodation suggestions</li>
+                <li>Bell ringers</li>
+                <li>Closure activities</li>
+                <li>Materials list generator</li>
+                <li>Instructional timing suggestions</li>
+              </ul>
+            </details>
+            <a class="feature-link" href="#watchlist">Join the watchlist <span aria-hidden="true">→</span></a>
           </article>
-          <article class="feature-card reveal delay-1">
-            <div class="feature-icon">✏️</div>
-            <h3>Assignments & Assessments</h3>
-            <p>Generate rubrics, exit tickets, quizzes, and assignments instantly. Reduce prep time without reducing quality.</p>
+
+          <article class="feature-card reveal delay-1" id="deliverable-studio">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="12" y="7" width="18" height="22" rx="2" stroke="currentColor" stroke-width="2"/><path d="M16 14h10M16 19h10M16 24h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M9 12v18a2 2 0 0 0 2 2h14" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Deliverable Studio</h3>
+            <p class="feature-desc">Classroom-ready student materials, generated instantly.</p>
+            <ul class="feature-highlights">
+              <li>Exit tickets &amp; quizzes in seconds</li>
+              <li>Worksheets, homework &amp; study guides</li>
+            </ul>
+            <details class="feature-more">
+              <summary>See everything in Deliverable Studio <span class="chevron" aria-hidden="true"></span></summary>
+              <ul class="feature-full-list">
+                <li>Exit tickets</li>
+                <li>Quizzes &amp; assessments</li>
+                <li>Practice activities / assignments</li>
+                <li>Spiral review <span class="soon-tag">Coming soon</span></li>
+                <li>Worksheets &amp; classroom materials <span class="soon-tag">Coming soon</span></li>
+                <li>Homework</li>
+                <li>Slotted notes</li>
+                <li>Independent practice</li>
+                <li>Guided practice</li>
+                <li>Graphic organizers</li>
+                <li>Vocabulary activities</li>
+                <li>Writing prompts</li>
+                <li>Discussion questions</li>
+                <li>Choice boards</li>
+                <li>Centers / stations</li>
+                <li>Warm-ups</li>
+                <li>Review games</li>
+                <li>Study guides</li>
+              </ul>
+            </details>
+            <a class="feature-link" href="#watchlist">Join the watchlist <span aria-hidden="true">→</span></a>
           </article>
+
           <article class="feature-card reveal delay-2">
-            <div class="feature-icon">📊</div>
-            <h3>Grading Support</h3>
-            <p>Move through feedback and progress checks faster — while surfacing the insights that help students grow.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="9" y="6" width="18" height="24" rx="2" stroke="currentColor" stroke-width="2"/><path d="M13 13h10M13 18h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M22 22.5l3 3 6-6.5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Grading Studio</h3>
+            <p class="feature-desc">Grade faster with FERPA/COPPA-compliant AI support and feedback that actually helps.</p>
+            <ul class="feature-highlights">
+              <li>Scan or upload student work</li>
+              <li>Standards-based scoring &amp; growth reports</li>
+            </ul>
+            <details class="feature-more">
+              <summary>See everything in Grading Studio <span class="chevron" aria-hidden="true"></span></summary>
+              <ul class="feature-full-list">
+                <li>Scan or upload student work (FERPA/COPPA compliant)</li>
+                <li>Intelligent grading assistant</li>
+                <li>Rubric scoring</li>
+                <li>Written feedback <span class="soon-tag">Coming soon</span></li>
+                <li>Class mastery analysis</li>
+                <li>Standards-based scoring</li>
+                <li>Missing assignment tracking</li>
+                <li>Class trends</li>
+                <li>Student growth reports</li>
+                <li>Parent-friendly progress summaries</li>
+              </ul>
+            </details>
+            <a class="feature-link" href="#watchlist">Join the watchlist <span aria-hidden="true">→</span></a>
           </article>
+
           <article class="feature-card reveal">
-            <div class="feature-icon">🎯</div>
-            <h3>Intervention Guidance</h3>
-            <p>Identify learning gaps and get targeted next steps that help the right students move forward at the right time.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M20 8a9 9 0 0 0-5 16.5V27a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2v-2.5A9 9 0 0 0 20 8Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M17 32h6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M20 4v2M8 20H6M34 20h-2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Project Studio</h3>
+            <p class="feature-desc">Plan meaningful project-based learning — from driving question to final presentation.</p>
+            <ul class="feature-highlights">
+              <li>Free PBL templates</li>
+              <li>Rubric &amp; timeline generators</li>
+            </ul>
+            <details class="feature-more">
+              <summary>See everything in Project Studio <span class="chevron" aria-hidden="true"></span></summary>
+              <ul class="feature-full-list">
+                <li>Project-based learning</li>
+                <li>Intelligent project planning assistant</li>
+                <li>Long-term / short-term projects</li>
+                <li>Free PBL templates</li>
+                <li>Project timeline builder</li>
+                <li>Student checkpoints</li>
+                <li>Rubric generator</li>
+                <li>Team role suggestions</li>
+                <li>Driving question generator</li>
+                <li>Presentation options</li>
+                <li>Reflection prompts</li>
+                <li>Standards mapping</li>
+              </ul>
+            </details>
+            <a class="feature-link" href="#watchlist">Join the watchlist <span aria-hidden="true">→</span></a>
           </article>
-          <article class="feature-card reveal delay-1">
-            <div class="feature-icon">🧠</div>
-            <h3>Instructional Coaching</h3>
-            <p>Get pacing, planning, and classroom support on demand — like having a coach available whenever you need one.</p>
+
+          <article class="feature-card reveal delay-1" id="intervention-studio">
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="12" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="6.5" stroke="currentColor" stroke-width="2"/><circle cx="20" cy="20" r="1.5" fill="currentColor"/></svg>
+            </div>
+            <span class="soon-badge">Coming Soon</span>
+            <h3>Intervention Studio</h3>
+            <p class="feature-desc">Identify learning gaps and get targeted next steps for the students who need it most.</p>
+            <ul class="feature-highlights">
+              <li>Small-group &amp; MTSS/RTI support</li>
+              <li>Skill gap identification</li>
+            </ul>
+            <details class="feature-more">
+              <summary>See everything in Intervention Studio <span class="chevron" aria-hidden="true"></span></summary>
+              <ul class="feature-full-list">
+                <li>Small-group planning</li>
+                <li>Targeted intervention recommendations</li>
+                <li>Progress monitoring</li>
+                <li>Data-informed reteaching</li>
+                <li>Student support workflows</li>
+                <li>Small group builder</li>
+                <li>Skill gap identification</li>
+                <li>Intervention lesson generator</li>
+                <li>Reteaching activities</li>
+                <li>Student grouping</li>
+                <li>Parent support resources</li>
+                <li>MTSS support</li>
+                <li>RTI documentation</li>
+              </ul>
+            </details>
+            <a class="feature-link" href="#watchlist">Join the watchlist <span aria-hidden="true">→</span></a>
           </article>
+
           <article class="feature-card reveal delay-2">
-            <div class="feature-icon">⚡</div>
-            <h3>One Intelligent Workspace</h3>
-            <p>Plan, teach, assess, and intervene — all in one place. No more toggling between tools that don't talk to each other.</p>
+            <div class="feature-icon" aria-hidden="true">
+              <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 14c0-4 3.5-7 8-7s8 3 8 7v9c0 4.5-3.5 8-8 8s-8-3.5-8-8v-9Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="16.5" cy="16.5" r="2.2" fill="currentColor"/><circle cx="23.5" cy="16.5" r="2.2" fill="currentColor"/><path d="M20 20l-1.5 2.5h3L20 20Z" fill="currentColor"/><path d="M9 10l3 4M31 10l-3 4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Ivaro Instructional Partner</h3>
+            <p class="feature-desc">Your always-available instructional thought partner — for teaching, classroom support, and your own wellness.</p>
+            <ul class="feature-highlights">
+              <li>Instructional guidance &amp; coaching</li>
+              <li>Teacher wellness &amp; burnout prevention</li>
+            </ul>
+            <details class="feature-more">
+              <summary>See everything in Ivaro Instructional Partner <span class="chevron" aria-hidden="true"></span></summary>
+              <div class="feature-subgroup">
+                <p class="feature-subgroup-title">Instructional Guidance</p>
+                <ul class="feature-full-list">
+                  <li>Lesson improvement suggestions</li>
+                  <li>Curriculum guidance</li>
+                  <li>Teaching strategy recommendations</li>
+                  <li>Differentiation coaching</li>
+                  <li>Intervention recommendations</li>
+                  <li>Assessment analysis</li>
+                  <li>Data interpretation</li>
+                  <li>Professional growth support</li>
+                </ul>
+              </div>
+              <div class="feature-subgroup">
+                <p class="feature-subgroup-title">Classroom &amp; Student Support</p>
+                <ul class="feature-full-list">
+                  <li>Classroom management ideas</li>
+                  <li>Student engagement strategies</li>
+                  <li>Brain break recommendations</li>
+                  <li>Transition activities</li>
+                  <li>SEL activity suggestions</li>
+                  <li>Community-building ideas</li>
+                  <li>Parent communication guidance</li>
+                  <li>Resource recommendations</li>
+                </ul>
+              </div>
+              <div class="feature-subgroup">
+                <p class="feature-subgroup-title">Teacher Wellness &amp; Sustainability</p>
+                <ul class="feature-full-list">
+                  <li>Personalized stress-relief suggestions</li>
+                  <li>Two-minute classroom reset activities</li>
+                  <li>Teacher mindfulness exercises</li>
+                  <li>Guided breathing exercises</li>
+                  <li>Relaxation activities between classes</li>
+                  <li>Encouragement and motivational support</li>
+                  <li>Work-life balance reminders</li>
+                  <li>Burnout prevention strategies</li>
+                  <li>End-of-day reflection prompts</li>
+                  <li>Celebration of classroom wins</li>
+                </ul>
+              </div>
+              <div class="feature-subgroup">
+                <p class="feature-subgroup-title">Productivity &amp; Decision Support</p>
+                <ul class="feature-full-list">
+                  <li>Daily planning assistance</li>
+                  <li>Instructional decision support</li>
+                  <li>Time-saving workflow suggestions</li>
+                  <li>Priority recommendations</li>
+                  <li>Meeting preparation</li>
+                  <li>PLC discussion support</li>
+                  <li>Weekly planning checklists</li>
+                  <li>Reflection and next-step suggestions</li>
+                </ul>
+              </div>
+              <div class="feature-subgroup">
+                <p class="feature-subgroup-title">Encouragement &amp; Celebration</p>
+                <ul class="feature-full-list">
+                  <li>Celebrating milestones and accomplishments</li>
+                  <li>Positive reinforcement and encouragement</li>
+                  <li>Recognizing teacher growth over time</li>
+                  <li>Reflective journaling prompts</li>
+                  <li>Gratitude moments</li>
+                  <li>Confidence-building reminders</li>
+                  <li>Weekly wins recap</li>
+                  <li>Motivational check-ins</li>
+                </ul>
+              </div>
+            </details>
+            <a class="feature-link" href="#watchlist">Join the watchlist <span aria-hidden="true">→</span></a>
           </article>
+
         </div>
       </div>
     </section>
@@ -332,7 +555,7 @@
             </div>
           </article>
         </div>
-        <p class="founder-statement reveal">"We built Ivaro because we believe teachers deserve intelligent tools that reduce overwhelm, support great instruction, and help educators focus on what matters most — their students."</p>
+        <blockquote class="founder-statement reveal">We built Ivaro because we believe teachers deserve intelligent tools that reduce overwhelm, support great instruction, and help educators focus on what matters most — their students.</blockquote>
       </div>
     </section>
 
