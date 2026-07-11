@@ -10,7 +10,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
-
 </head>
 <body>
 
@@ -23,6 +22,7 @@
       <nav class="desktop-nav" aria-label="Main navigation">
         <a href="#why-ivaro">Why Ivaro</a>
         <a href="#features">Features</a>
+        <a href="#founders">Our Story</a>
         <a href="#watchlist">Watchlist Coming Soon</a>
       </nav>
       <a class="nav-cta" href="#watchlist">Watchlist Coming Soon</a>
@@ -35,6 +35,7 @@
   <div class="mobile-menu" id="mobileMenu">
     <a href="#why-ivaro">Why Ivaro</a>
     <a href="#features">Features</a>
+    <a href="#founders">Our Story</a>
     <a href="#watchlist">Watchlist Coming Soon</a>
     <a class="mobile-cta" href="#watchlist">Watchlist Coming Soon</a>
   </div>
@@ -48,7 +49,7 @@
       <div class="hero-grid container">
         <div class="hero-copy reveal">
           <div class="eyebrow-pill">Built for overwhelmed K–8 teachers</div>
-          <h1>Get your time,<br>clarity, and<br>confidence back.</h1>
+          <h1>Get your <span class="hw">time</span>,<br><span class="hw">clarity</span>, and<br><span class="hw">confidence</span> back.</h1>
           <p class="hero-subtitle">Ivaro simplifies lesson planning, grading, and student support — so everything you need to teach effectively lives in one place.</p>
           <div class="feature-pills">
             <div class="pill"><span class="pill-dot"></span>Plan lessons in minutes</div>
@@ -69,6 +70,14 @@
       </div>
     </section>
 
+    <!-- BRAND STRIP -->
+    <section class="brand-strip">
+      <div class="container brand-strip-inner">
+        <img src="assets/ivaro-logo.png" alt="Ivaro — Teach Brilliantly" class="brand-strip-logo" />
+        <p class="brand-strip-tagline">Intelligent instructional support — built by educators, for educators.</p>
+      </div>
+    </section>
+
     <!-- WHY IVARO -->
     <section class="why-ivaro section-pad" id="why-ivaro">
       <div class="container">
@@ -80,6 +89,15 @@
           <div class="before-card">
             <p class="card-label red">Before Ivaro</p>
             <h3>Too many tools. Not enough time.</h3>
+            <!-- Mockup: scattered tools -->
+            <div class="card-mockup before-mockup">
+              <div class="mock-tab">📧 Email</div>
+              <div class="mock-tab">📁 Drive</div>
+              <div class="mock-tab">📊 Gradebook</div>
+              <div class="mock-tab">📋 Planner</div>
+              <div class="mock-tab">🗂️ LMS</div>
+              <div class="mock-tab">📝 Notes</div>
+            </div>
             <ul class="check-list red">
               <li><span class="check-icon">✕</span>Hours spent planning and creating materials</li>
               <li><span class="check-icon">✕</span>Scattered systems and disconnected workflows</li>
@@ -90,6 +108,18 @@
           <div class="after-card">
             <p class="card-label green">After Ivaro</p>
             <h3>One connected workspace for teaching.</h3>
+            <!-- Mockup: clean Ivaro workspace -->
+            <div class="card-mockup after-mockup">
+              <div class="mock-workspace-header">
+                <span class="mock-dot green"></span> Ivaro Workspace
+              </div>
+              <div class="mock-workspace-body">
+                <div class="mock-row"><span class="mock-check">✓</span> Today's Lesson Plan</div>
+                <div class="mock-row"><span class="mock-check">✓</span> Assignment Builder</div>
+                <div class="mock-row"><span class="mock-check">✓</span> Student Progress</div>
+                <div class="mock-row"><span class="mock-check">✓</span> Coaching Insights</div>
+              </div>
+            </div>
             <ul class="check-list green">
               <li><span class="check-icon">✓</span>Lesson plans, materials, and grading together</li>
               <li><span class="check-icon">✓</span>Instant assignments, quizzes, and exit tickets</li>
@@ -167,6 +197,76 @@
       </div>
     </section>
 
+    <!-- TRUST BAR -->
+    <section class="trust-bar section-pad">
+      <div class="container">
+        <div class="trust-bar-inner reveal">
+          <div class="trust-item">
+            <div class="trust-icon">🔒</div>
+            <div>
+              <p class="trust-label">Privacy First</p>
+              <p class="trust-text">Intentionally designed with FERPA and COPPA compliance in mind.</p>
+            </div>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <div class="trust-icon">🎓</div>
+            <div>
+              <p class="trust-label">Educator-Led</p>
+              <p class="trust-text">Built by educators who have lived the challenges teachers face every day.</p>
+            </div>
+          </div>
+          <div class="trust-divider"></div>
+          <div class="trust-item">
+            <div class="trust-icon">🚫</div>
+            <div>
+              <p class="trust-label">No Ads. Ever.</p>
+              <p class="trust-text">Your data and your students' data will never be sold or used for advertising.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOUNDERS -->
+    <section class="founders section-pad" id="founders">
+      <div class="container">
+        <div class="section-heading reveal">
+          <p class="eyebrow">The people behind Ivaro</p>
+          <h2>Built by someone who's been in your shoes.</h2>
+        </div>
+        <div class="founders-grid">
+          <article class="founder-card reveal">
+            <div class="founder-avatar">RS</div>
+            <div class="founder-info">
+              <h3>Ruby Smith</h3>
+              <p class="founder-role">Co-Founder · Educator & Instructional Leader</p>
+              <p class="founder-bio">With 16+ years in K–8 education, Ruby has spent her career leading instruction, mentoring teachers, and advocating for systems that give educators their time back. She currently serves in Arizona public education and holds a Master's degree in Elementary Education with licensure in multiple states. Ivaro was built from her firsthand experience of doing too much with too little.</p>
+              <div class="founder-chips">
+                <span>16+ Years in Education</span>
+                <span>Curriculum Leadership</span>
+                <span>Teacher Mentorship</span>
+              </div>
+            </div>
+          </article>
+          <article class="founder-card reveal delay-1">
+            <div class="founder-avatar">KS</div>
+            <div class="founder-info">
+              <h3>Kevin Smith</h3>
+              <p class="founder-role">Co-Founder · Technology Executive & CIO</p>
+              <p class="founder-bio">Kevin is an award-nominated technology executive with leadership experience spanning enterprise AI, cybersecurity, and digital transformation across healthcare, aerospace, and other highly regulated industries. As an enterprise CIO, he brings the technical depth to build modern AI-powered platforms that are reliable, secure, and built to scale. He holds an MBA in Organizational Leadership and is a Certified Information Systems Security Professional (CISSP).</p>
+              <div class="founder-chips">
+                <span>Enterprise CIO</span>
+                <span>AI & Data Strategy</span>
+                <span>Cybersecurity (CISSP)</span>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="founder-statement reveal">"We built Ivaro because we believe teachers deserve intelligent tools that reduce overwhelm, support great instruction, and help educators focus on what matters most — their students."</p>
+      </div>
+    </section>
+
     <!-- WATCHLIST SIGNUP -->
     <section class="watchlist section-pad" id="watchlist">
       <div class="container">
@@ -208,6 +308,7 @@
       <div class="footer-links">
         <a href="#why-ivaro">Why Ivaro</a>
         <a href="#features">Features</a>
+        <a href="#founders">Our Story</a>
         <a href="#watchlist">Watchlist Coming Soon</a>
       </div>
     </div>
