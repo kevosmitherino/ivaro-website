@@ -844,6 +844,18 @@ ul { list-style: none; }
    FOOTER
    ============================================================ */
 
+.footer-logo-band {
+  background: var(--white);
+  padding: 40px 0;
+  text-align: center;
+  border-bottom: 1px solid var(--border);
+}
+
+.footer-full-logo {
+  height: 140px;
+  width: auto;
+}
+
 .footer {
   background: var(--text);
   padding: 60px 0 32px;
@@ -971,7 +983,7 @@ ul { list-style: none; }
   .before-card, .after-card { padding: 28px; }
   .watchlist-form { padding: 28px; }
   .founder-card { flex-direction: column; }
-  .brand-strip-logo { height: 72px; }
+  .footer-full-logo { height: 90px; }
   .founder-statement { font-size: 1rem; padding: 24px; }
   .footer-links { gap: 16px; }
   .section-heading h2 { font-size: 1.75rem; }
