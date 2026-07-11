@@ -589,6 +589,9 @@ ul { list-style: none; }
 
 .before-after-image {
   margin-top: 48px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
 }
 
 .before-after-img {
@@ -596,6 +599,14 @@ ul { list-style: none; }
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-md);
   display: block;
+}
+
+.mobile-only { display: none; }
+.desktop-only { display: block; }
+
+@media (max-width: 680px) {
+  .desktop-only { display: none; }
+  .mobile-only { display: block; }
 }
 
 /* ============================================================
