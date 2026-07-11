@@ -584,6 +584,21 @@ ul { list-style: none; }
 .ml-embedded h4 { display: none !important; }
 
 /* ============================================================
+   BEFORE / AFTER IMAGE
+   ============================================================ */
+
+.before-after-image {
+  margin-top: 48px;
+}
+
+.before-after-img {
+  width: 100%;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  display: block;
+}
+
+/* ============================================================
    HERO HIGHLIGHT WORDS
    ============================================================ */
 
