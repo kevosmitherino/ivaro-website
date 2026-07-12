@@ -271,9 +271,12 @@ ul { list-style: none; }
   font-family: var(--font-accent);
   font-style: italic;
   font-weight: 600;
-  font-size: clamp(1.25rem, 2vw, 1.6rem);
+  font-size: clamp(1.9rem, 3vw, 2.5rem);
   color: var(--green-dark);
-  margin-bottom: 24px;
+  line-height: 1.1;
+  letter-spacing: -.01em;
+  margin-top: 6px;
+  margin-bottom: 28px;
 }
 
 .hero-subtitle {
@@ -295,13 +298,13 @@ ul { list-style: none; }
 .pill {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
   background: var(--white);
   border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 12px 14px;
-  font-size: .875rem;
-  font-weight: 600;
+  border-radius: 14px;
+  padding: 14px 16px;
+  font-size: .95rem;
+  font-weight: 700;
   color: var(--text);
   box-shadow: var(--shadow-sm);
   transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease;
@@ -309,21 +312,28 @@ ul { list-style: none; }
 .pill:hover {
   border-color: var(--green);
   box-shadow: var(--shadow-md);
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+}
+.pill:hover .pill-icon {
+  background: var(--green);
+  color: var(--white);
 }
 
 .pill-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 20px;
-  height: 20px;
-  color: var(--green);
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: var(--green-light);
+  color: var(--green-dark);
   flex-shrink: 0;
+  transition: background .2s ease, color .2s ease;
 }
 .pill-icon svg {
-  width: 100%;
-  height: 100%;
+  width: 21px;
+  height: 21px;
 }
 
 .hero-actions {
@@ -529,19 +539,25 @@ ul { list-style: none; }
 }
 
 .feature-icon {
-  width: 52px;
-  height: 52px;
+  width: 60px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 12px;
-  background: var(--green-light);
-  color: var(--navy);
-  margin-bottom: 18px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
+  color: var(--white);
+  margin-bottom: 20px;
+  box-shadow: 0 6px 18px rgba(23,59,140,.20);
+  transition: transform .3s ease, box-shadow .3s ease;
+}
+.feature-card:hover .feature-icon {
+  transform: scale(1.06) rotate(-3deg);
+  box-shadow: 0 10px 24px rgba(23,59,140,.28);
 }
 .feature-icon svg {
-  width: 28px;
-  height: 28px;
+  width: 30px;
+  height: 30px;
 }
 
 .soon-badge {
@@ -593,7 +609,7 @@ ul { list-style: none; }
 }
 
 .feature-more {
-  margin-bottom: 18px;
+  margin-top: auto;
   border-top: 1px solid var(--border);
   padding-top: 14px;
 }
@@ -667,17 +683,6 @@ ul { list-style: none; }
   white-space: nowrap;
 }
 
-.feature-link {
-  margin-top: auto;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  font-size: .85rem;
-  font-weight: 700;
-  color: var(--green-dark);
-  transition: gap .2s ease;
-}
-.feature-link:hover { gap: 10px; }
 
 /* ============================================================
    QUOTES
@@ -705,18 +710,12 @@ ul { list-style: none; }
   border-color: rgba(43,174,102,.35);
 }
 
-.quote-mark {
-  font-family: Georgia, serif;
-  font-size: 4rem;
-  color: var(--green);
-  line-height: .8;
-  margin-bottom: 16px;
-}
-
 .quote-card p {
-  font-size: 1rem;
-  color: var(--text-soft);
-  line-height: 1.7;
+  font-family: var(--font-accent);
+  font-style: italic;
+  font-size: 1.25rem;
+  color: var(--navy);
+  line-height: 1.5;
 }
 
 /* ============================================================
@@ -981,15 +980,15 @@ ul { list-style: none; }
   font-family: var(--font-accent);
   font-style: italic;
   font-weight: 600;
-  font-size: 1.1rem;
+  font-size: 1.3rem;
   color: var(--white);
-  margin-bottom: 4px;
+  margin-bottom: 6px;
 }
 
 .trust-text {
-  font-size: 0.875rem;
-  color: rgba(255,255,255,0.7);
-  line-height: 1.5;
+  font-size: 1.02rem;
+  color: rgba(255,255,255,0.85);
+  line-height: 1.6;
 }
 
 .trust-divider {
