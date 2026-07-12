@@ -10,6 +10,9 @@
   --green: #2BAE66;
   --green-dark: #239557;
   --green-light: #E8F7EF;
+  --gold: #F2A900;
+  --gold-deep: #D98F00;
+  --gold-light: #FDF1D2;
   --bg: #F7FAFC;
   --white: #ffffff;
   --text: #1E293B;
@@ -269,21 +272,18 @@ ul { list-style: none; }
 
 .hero-slogan {
   display: inline-block;
-  font-family: var(--font-accent);
-  font-style: italic;
-  font-weight: 700;
-  font-size: clamp(2.2rem, 3.4vw, 2.9rem);
-  background: linear-gradient(100deg, var(--navy) 0%, var(--green) 100%);
+  font-family: var(--font-head);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 4vw, 3.25rem);
+  background: linear-gradient(95deg, var(--navy) 0%, var(--green) 48%, var(--gold-deep) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: var(--navy);
-  line-height: 1.1;
-  letter-spacing: -.01em;
-  margin-top: 10px;
-  margin-bottom: 30px;
-  padding-bottom: 8px;
-  border-bottom: 3px solid var(--green-light);
+  line-height: 1.05;
+  letter-spacing: -.02em;
+  margin-top: 12px;
+  margin-bottom: 26px;
 }
 
 .hero-subtitle {
@@ -375,7 +375,7 @@ ul { list-style: none; }
 .owl-img {
   position: relative;
   z-index: 1;
-  max-width: 420px;
+  max-width: 520px;
   width: 100%;
   object-fit: contain;
   animation: float 6s ease-in-out infinite;
@@ -1231,7 +1231,7 @@ ul { list-style: none; }
   .hero { padding-top: 130px; }
   .hero-grid { grid-template-columns: 1fr; gap: 48px; }
   .hero-visual { order: -1; }
-  .owl-img { max-width: 280px; margin: 0 auto; }
+  .owl-img { max-width: 340px; margin: 0 auto; }
   .feature-pills { max-width: 100%; }
 
   .before-after { grid-template-columns: 1fr; }
@@ -1261,7 +1261,7 @@ ul { list-style: none; }
   .feature-pills { grid-template-columns: 1fr; }
   .hero-actions { flex-direction: column; }
   .hero-actions .btn { width: 100%; text-align: center; }
-  .owl-img { max-width: 220px; }
+  .owl-img { max-width: 250px; }
   .features-grid { grid-template-columns: 1fr; }
   .before-card, .after-card { padding: 28px; }
   .watchlist-form { padding: 28px; }
