@@ -275,10 +275,6 @@ ul { list-style: none; }
   font-family: var(--font-head);
   font-weight: 800;
   font-size: clamp(2.4rem, 4vw, 3.25rem);
-  background: linear-gradient(95deg, var(--navy) 0%, var(--green) 48%, var(--gold-deep) 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
   color: var(--navy);
   line-height: 1.05;
   letter-spacing: -.02em;
