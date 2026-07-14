@@ -550,25 +550,22 @@ ul { list-style: none; }
 }
 
 .feature-icon {
-  width: 56px;
-  height: 56px;
+  width: 72px;
+  height: 72px;
   flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 16px;
-  background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
-  color: var(--white);
-  box-shadow: 0 6px 18px rgba(23,59,140,.20);
-  transition: transform .3s ease, box-shadow .3s ease;
+  transition: transform .3s ease;
 }
 .feature-card:hover .feature-icon {
   transform: scale(1.06) rotate(-3deg);
-  box-shadow: 0 10px 24px rgba(23,59,140,.28);
 }
-.feature-icon svg {
-  width: 30px;
-  height: 30px;
+.feature-icon img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+  display: block;
 }
 
 .soon-badge {
