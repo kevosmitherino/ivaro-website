@@ -319,25 +319,22 @@ ul { list-style: none; }
 }
 .pill:hover .pill-icon {
   transform: scale(1.06) rotate(-3deg);
-  box-shadow: 0 8px 18px rgba(23,59,140,.26);
 }
 
 .pill-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 42px;
-  height: 42px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, var(--navy) 0%, var(--green) 100%);
-  color: var(--white);
+  width: 52px;
+  height: 52px;
   flex-shrink: 0;
-  box-shadow: 0 5px 14px rgba(23,59,140,.20);
-  transition: transform .25s ease, box-shadow .25s ease;
+  transition: transform .25s ease;
 }
-.pill-icon svg {
-  width: 21px;
-  height: 21px;
+.pill-icon img {
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  display: block;
 }
 
 .hero-actions {
