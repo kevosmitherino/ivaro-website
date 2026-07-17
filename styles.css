@@ -1493,3 +1493,102 @@ ul { list-style: none; }
   .article-wrap { padding: 120px 0 64px; }
   .article-body { font-size: 1.05rem; }
 }
+
+/* ============================================================
+   STUDIO PAGES
+   ============================================================ */
+.studio-hero {
+  padding: 172px 0 60px;
+  background: linear-gradient(180deg, var(--green-light), var(--bg));
+  text-align: center;
+}
+.studio-hero .container { max-width: 760px; }
+.studio-icon {
+  width: 92px;
+  height: 92px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 20px;
+}
+.studio-hero h1 {
+  font-size: clamp(2.1rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--navy);
+  line-height: 1.12;
+}
+.studio-lead {
+  max-width: 620px;
+  margin: 16px auto 0;
+  font-size: 1.18rem;
+  line-height: 1.65;
+  color: var(--text-soft);
+}
+.studio-hero-actions { margin-top: 30px; }
+
+.studio-section { padding: 60px 0; }
+.studio-section + .studio-section { border-top: 1px solid var(--border); }
+.studio-section h2 {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--navy);
+  margin-bottom: 18px;
+}
+.studio-intro p {
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+.studio-intro p + p { margin-top: 1.3rem; }
+
+.studio-features {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 14px 32px;
+}
+.studio-features li {
+  position: relative;
+  padding-left: 32px;
+  font-size: 1.02rem;
+  line-height: 1.5;
+  color: var(--text);
+}
+.studio-features li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="%232BAE66"/><path d="M5.8 10.4l2.6 2.6 5.4-5.8" fill="none" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center / contain;
+}
+
+.studio-faq-item { padding: 22px 0; border-top: 1px solid var(--border); }
+.studio-faq-item:first-of-type { border-top: none; padding-top: 0; }
+.studio-faq-item h3 {
+  font-size: 1.18rem;
+  font-weight: 700;
+  color: var(--navy);
+  margin-bottom: 8px;
+}
+.studio-faq-item p { color: var(--text-soft); line-height: 1.7; }
+
+.feature-link {
+  display: inline-block;
+  margin-top: 16px;
+  color: var(--green-dark);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: .95rem;
+  text-decoration: none;
+  transition: color .2s ease, transform .2s ease;
+}
+.feature-link:hover { color: var(--green); transform: translateX(3px); }
+
+@media (max-width: 620px) {
+  .studio-hero { padding: 132px 0 44px; }
+  .studio-section { padding: 44px 0; }
+  .studio-features { grid-template-columns: 1fr; }
+}
