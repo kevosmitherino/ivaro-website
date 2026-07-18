@@ -1565,15 +1565,65 @@ ul { list-style: none; }
   background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><circle cx="10" cy="10" r="10" fill="%232BAE66"/><path d="M5.8 10.4l2.6 2.6 5.4-5.8" fill="none" stroke="white" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"/></svg>') no-repeat center / contain;
 }
 
-.studio-faq-item { padding: 22px 0; border-top: 1px solid var(--border); }
-.studio-faq-item:first-of-type { border-top: none; padding-top: 0; }
-.studio-faq-item h3 {
+/* Read more (intro) */
+.studio-readmore { margin-top: 1.3rem; }
+.studio-readmore > summary {
+  list-style: none;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--green-dark);
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1rem;
+  width: fit-content;
+}
+.studio-readmore > summary::-webkit-details-marker { display: none; }
+.studio-readmore > summary::after {
+  content: "";
+  width: 15px;
+  height: 15px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23239557" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>') no-repeat center / contain;
+  transition: transform .25s ease;
+}
+.studio-readmore[open] > summary::after { transform: rotate(180deg); }
+.studio-readmore[open] > summary { margin-bottom: 1.3rem; }
+.studio-readmore p {
+  font-size: 1.12rem;
+  line-height: 1.8;
+  color: var(--text);
+}
+.studio-readmore p + p { margin-top: 1.3rem; }
+
+/* FAQ accordion */
+.studio-faq-item { border-top: 1px solid var(--border); }
+.studio-faq-item:first-of-type { border-top: none; }
+.studio-faq-item > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  padding: 22px 0;
+  font-family: var(--font-head);
   font-size: 1.18rem;
   font-weight: 700;
   color: var(--navy);
-  margin-bottom: 8px;
 }
-.studio-faq-item p { color: var(--text-soft); line-height: 1.7; }
+.studio-faq-item:first-of-type > summary { padding-top: 0; }
+.studio-faq-item > summary::-webkit-details-marker { display: none; }
+.studio-faq-item > summary::after {
+  content: "";
+  flex: 0 0 auto;
+  width: 22px;
+  height: 22px;
+  background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="%23173B8C" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></svg>') no-repeat center / contain;
+  transition: transform .25s ease;
+}
+.studio-faq-item[open] > summary::after { transform: rotate(180deg); }
+.studio-faq-item p { color: var(--text-soft); line-height: 1.7; margin: 0; padding-bottom: 22px; }
 
 .feature-link {
   display: inline-block;
