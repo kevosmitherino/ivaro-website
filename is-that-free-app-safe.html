@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Is That Free Teaching App Actually Safe? A Guide to Student Data Privacy | Ivaro Blog</title>
+  <meta name="description" content="Most free classroom apps make money from your students' data. Here is how to tell the safe ones from the risky ones, written for teachers, principals, and district staff by a CISSP and CIO." />
+  <link rel="canonical" href="https://ivaro.ai/is-that-free-app-safe.html" />
+
+  <meta name="robots" content="index, follow" />
+  <link rel="icon" href="assets/ivaro-favicon.png" type="image/png" />
+  <meta name="theme-color" content="#173B8C" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:url" content="https://ivaro.ai/is-that-free-app-safe.html" />
+  <meta property="og:title" content="Is That Free Teaching App Actually Safe? A Guide to Student Data Privacy" />
+  <meta property="og:description" content="Most free classroom apps make money from your students' data. Here is how to tell the safe ones from the risky ones, written for teachers, principals, and district staff." />
+  <meta property="og:image" content="https://ivaro.ai/assets/og-image.png" />
+  <meta property="og:image:secure_url" content="https://ivaro.ai/assets/og-image.png" />
+  <meta property="og:image:type" content="image/png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:site_name" content="Ivaro" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Is That Free Teaching App Actually Safe? A Guide to Student Data Privacy" />
+  <meta name="twitter:description" content="Most free classroom apps make money from your students' data. Here is how to tell the safe ones from the risky ones, written for teachers, principals, and district staff." />
+  <meta name="twitter:image" content="https://ivaro.ai/assets/og-image.png" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&family=Fraunces:ital,wght@0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar" id="navbar">
+    <div class="nav-inner container">
+      <a class="brand" href="index.html" aria-label="Ivaro home">
+        <img src="assets/ivaro-logo.png" alt="Ivaro logo" />
+      </a>
+      <nav class="desktop-nav" aria-label="Main navigation">
+        <a href="index.html#why-ivaro">Why Ivaro</a>
+        <a href="index.html#features">Features</a>
+        <a href="about.html">Our Story</a>
+        <a href="blog.html" class="nav-current" aria-current="page">Blog</a>
+      </nav>
+      <a class="nav-cta" href="index.html#watchlist">Join the Watchlist</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#why-ivaro">Why Ivaro</a>
+    <a href="index.html#features">Features</a>
+    <a href="about.html">Our Story</a>
+    <a href="blog.html">Blog</a>
+    <a class="mobile-cta" href="index.html#watchlist">Join the Watchlist</a>
+  </div>
+
+  <main>
+    <article class="article-wrap">
+
+      <!-- ARTICLE HEADER -->
+      <header class="article-header container-narrow">
+        <a class="back-link" href="blog.html">← Back to blog</a>
+        <span class="post-tag post-tag-inline">Security &amp; Student Privacy</span>
+        <h1>Is That Free Teaching App Actually Safe? A Guide to Student Data Privacy</h1>
+        <p class="article-standfirst">Free almost never means free. When an app does not charge you money, there is a good chance it is getting paid some other way, and that other way is often your students' data.</p>
+        <div class="article-byline">
+          <span>By Kevin Smith · Co-Founder, Ivaro · CISSP, MBA · 20+ years in IT, Cybersecurity &amp; AI</span>
+          <span class="post-meta-dot">·</span>
+          <span>July 17, 2026</span>
+          <span class="post-meta-dot">·</span>
+          <span>8 min read</span>
+        </div>
+      </header>
+
+      <!-- ARTICLE BODY -->
+      <div class="article-body container-narrow">
+
+        <p>A teacher I know found a fun little app that turned spelling lists into a game. It was free. Signing up took about thirty seconds. She typed in her class list, the first names, the last initials, the reading group each kid was in, clicked the box that said I Agree, and got on with her afternoon. Nothing about that is wrong. It is what any of us would have done. It is also what happens in a few hundred thousand classrooms every single week.</p>
+
+        <p>I have spent more than twenty years working in IT and cybersecurity, so I will admit the first thing that went through my head when I heard that story had nothing to do with spelling. It was more like, I wonder where that class list just went. A lot of my career has been spent on the other side of the glass, and I have a pretty good sense of what tends to happen after someone clicks I Agree. Most of the time it is not sinister. It is just a business model doing what it was built to do. The catch is that the business is sometimes the kids themselves.</p>
+
+        <p>I am not writing this to make anyone paranoid, and I am definitely not writing it to talk you out of using technology. Good tools are worth every minute they hand back to you. I just want to walk through one question that every teacher, principal, and district leader ought to be able to answer before a child's name gets typed into anything. Is this actually safe?</p>
+
+        <h2>The quiet math of "free"</h2>
+        <p>Software is expensive to build. Servers, engineers, support, security, none of that is free to the company that is handing you a free app. So whenever I see something with no price on it, I find myself asking the oldest question in my line of work. Then how does this thing pay for itself?</p>
+        <p>Sometimes the answer is perfectly reasonable. Maybe the company raised money, or the free version exists to sell you the paid one down the road. But sometimes the answer is the one nobody wants to say out loud. The product is not the app. The product is the data flowing through it. Names, grade levels, device information, location, browsing habits, which kids are falling behind. Stack all of that up and you have a profile. And profiles of children happen to be worth quite a bit, mostly because they are supposed to be nobody's business.</p>
+
+        <blockquote>What bothers me is not that one company somewhere might sell student data. It is that so many apps are wired to share it automatically, and no one in the building ever hears a word about it.</blockquote>
+
+        <h2>The numbers are worse than most educators think</h2>
+        <p>I do not love scaring people with statistics. These ones are hard to look past, though, and they come from serious researchers rather than clickbait.</p>
+        <p>Back in late 2022, <strong>Internet Safety Labs</strong> looked at the apps being used across 663 schools, which added up to roughly 455,000 students. They found that <strong>96%</strong> of those apps shared children's personal information with outside parties. <strong>78%</strong> of them handed it specifically to advertising and analytics companies, usually without the school or the family knowing a thing. Almost a quarter showed children ads right there inside the app.</p>
+        <p>That same year, <strong>Human Rights Watch</strong> studied 163 learning apps and platforms used around the world. Their conclusion was that <strong>89%</strong> of them either surveilled children or had the ability to, often long after the school day was over and nowhere near a classroom.</p>
+        <p>And when data does get out, it gets out at scale. <strong>Comparitech</strong> counted more than 3,700 data breaches at schools here in the United States, which exposed over <strong>37 million</strong> records.</p>
+        <p>Read that first number one more time. Ninety-six percent. This is not a handful of shady apps hiding in the corners of the app store. This is much closer to how the whole free app economy around our classrooms simply operates. Almost none of the teachers using those tools had any idea, and really, why would they. Nobody goes into teaching to moonlight as a security expert.</p>
+
+        <h2>Why this matters more for a child than it does for you or me</h2>
+        <p>When my data leaks, it is a headache. I change a few passwords, I keep an eye on my credit, and life moves on. When the same thing happens to a nine year old, it is a different story, and a worse one, for a reason that is easy to miss. A child has their whole life still in front of the data.</p>
+        <p>Think about what a profile on a second grader can grow into. Their name, their school, the fact that reading is hard for them, the device they use, where they tend to be at three in the afternoon. All of that can be bought, sold, stitched together with other data sets, and used to target them for years before they are anywhere near old enough to agree to it. A stolen Social Security number belonging to a kid is basically a gift to an identity thief, because nobody thinks to check a seven year old's credit report for another decade. This is the whole reason we have laws like <strong>FERPA</strong>, which protects the privacy of student education records, and <strong>COPPA</strong>, which limits what companies can collect from children under 13. Those laws exist because kids cannot look out for themselves here. The adults have to do it for them.</p>
+        <p>And here is the part that keeps the district folks I talk to up at night. When a teacher signs up for some free tool on her own and starts feeding student data into it, the school can end up being the one on the hook for the compliance mess, even though nobody in the district ever approved it or even knew it was there.</p>
+
+        <h2>How to tell the safe ones from the risky ones</h2>
+        <p>You do not need any of my certifications to make good calls here. You need a few questions and the nerve to walk away when the answers are bad. Here is what I actually pay attention to, in plain language.</p>
+        <p><strong>Who is paying for this?</strong> If you cannot figure out how a free product keeps its lights on, go ahead and assume the data is the payment until somebody proves otherwise. A company with nothing to hide will just tell you. We are grant funded. There is a paid plan for schools. We charge the district. Clear answers are a good sign.</p>
+        <p><strong>Does it actually say the words FERPA and COPPA?</strong> Tools made for schools should come right out and say they follow student privacy laws. They should not hand you a generic privacy policy that reads like it was copied off an online store. Vague is a bad sign. Specific is a good one. A lot of the trustworthy ones have also signed something called the Student Privacy Pledge, which is a nice signal on its own, even if it is not a guarantee.</p>
+        <p><strong>Does it sell or share data with advertisers?</strong> Open the privacy policy and search it for a few words. Third parties. Advertising. Sell. A good policy will say plainly that it does not sell student data and does not use it for ads. If instead it reserves the right to share with partners, that door was left open on purpose.</p>
+        <p><strong>Can you get the data back, and can you delete it?</strong> The tools worth trusting let a school pull its data out and erase it for good whenever it asks. If there is no obvious way to make the information disappear, then it never really leaves.</p>
+        <p><strong>Did anyone whose actual job is to check ever look at this?</strong> The single most protective habit a school can build is almost boring in how simple it is. Student data only goes into tools the district has already vetted. One short list of approved tools will do more good than a hundred well meaning decisions made one classroom at a time.</p>
+        <p>None of that takes a technical background. It takes a few minutes and permission to be a little suspicious on behalf of your students. And that suspicion is not you being cynical. It is you looking out for them.</p>
+
+        <h2>What good actually looks like</h2>
+        <p>Let me be clear about one thing, because I build software for a living and I do not think the lesson here is fewer tools or more fear. The lesson is tools that earn the trust they are asking you for.</p>
+        <p>A tool worth trusting is almost boringly open about how it makes money. It tells you what it collects and why, in words a tired human can actually read at the end of a long day. It does not quietly ship your class roster off to a dozen ad networks the second you hit save. It treats a kid's information like it belongs to the kid, which it does. In my experience, when a company is getting this right, they are usually happy to talk your ear off about it rather than hoping you never ask.</p>
+        <p>Ruby and I did not start Ivaro because the world was short one more app. We started it because we kept bumping into the gap between what technology promised teachers and what it quietly took back in return. Student data privacy sits right in the middle of that gap. When you are the one holding a child's information, saving the security conversation for later is not really an option. It has to be the thing you get right first, not the thing you bolt on at the end.</p>
+
+        <h2>So how does Ivaro measure up?</h2>
+        <p>It would be a little strange to spend a whole article handing you five questions and then dodge them myself. So here is how Ivaro answers each one. I would rather you hold us to the same standard I just asked you to hold everyone else to.</p>
+        <p><strong>Who is paying for this?</strong> The schools and districts that choose to use Ivaro. We do not run on advertising, and we do not make a single dollar from your students' information. That is the whole point. When the district is the customer, the district never has to wonder if it is secretly the product.</p>
+        <p><strong>Does it take FERPA and COPPA seriously?</strong> We built Ivaro around them from the very beginning instead of treating them as fine print to sort out down the road. Protecting student records is a design requirement for us, not a disclaimer buried at the bottom of a page.</p>
+        <p><strong>Does it sell or share data with advertisers?</strong> No, and it never has. Your students' information is not a product we sell and it does not go to advertisers, full stop. Here is a detail I am actually proud of. When Ivaro helps grade a stack of student work, the student's name is cropped out and blacked over before anything gets processed, and that name badge is never handed to the AI model at all. The tool only ever sees what it genuinely needs to do the job, and nothing more.</p>
+        <p><strong>Can you get the data back, and can it be deleted?</strong> We do not hold onto sensitive material any longer than the moment we need it. The original scanned uploads live in a temporary holding area for less than an hour and are then deleted automatically, on every path, whether the work finished or something failed along the way. Nothing sits quietly in the background collecting dust, or risk.</p>
+        <p><strong>Can someone whose job is to check actually check?</strong> We know the safest tools are the ones a district has looked at with clear eyes, so we try to make Ivaro easy to put under that kind of scrutiny. We are straightforward about where your data lives, which is inside Microsoft's Azure cloud, and about how it is handled. When the person in your district whose job is to ask the hard questions comes calling, we want them to get real answers, not a runaround.</p>
+        <p>None of that makes us special, and I do not want it to. It should be the baseline. My hope is that a few years from now this list feels obvious, the way seatbelts feel obvious now. Until then, ask every tool in your building these questions. Ivaro included.</p>
+
+        <h2>From Kevin's Desk</h2>
+        <p>Something I learned pretty early in my career is that most data disasters do not begin with a hacker in a hoodie. They begin with something small and completely well meaning. A handy tool. A fast sign up. A box checked without reading it. The breach is just the last domino to fall.</p>
+        <p>That is the lens I carry into education technology, and it is why none of this feels abstract to me. Every free app that quietly vacuums up a classroom is one of those small first dominoes. The good news is that the fix is small and human too. Ask who is paying. Read the two or three lines that actually matter. Keep student data inside tools that somebody bothered to check. You do not have to turn into a security professional. You just have to stay a little curious for your students' sake, and expect the companies asking for your trust to go out and earn it.</p>
+
+        <h2>Frequently Asked Questions</h2>
+        <h3>Are free classroom apps safe for student data?</h3>
+        <p>Some are, and plenty are not. Research from Internet Safety Labs found that 96% of the apps it studied across a large group of schools shared children's personal information with outside parties, and 78% shared it with advertising or analytics companies. Free usually means the app is earning its keep off the data moving through it. Before you type in any student information, figure out how the tool makes money and check whether it says clearly that it follows FERPA and COPPA and does not sell student data or use it for ads.</p>
+        <h3>What is FERPA and how does it relate to apps?</h3>
+        <p>FERPA stands for the Family Educational Rights and Privacy Act, a United States law that protects the privacy of student education records. When a teacher puts student data into an outside app, that data can fall under FERPA, and the school can be held responsible for how it is handled. That is why student data should only go into tools the district has looked at first, and why the trustworthy education apps state their FERPA compliance right up front.</p>
+        <h3>How can I tell if an app sells student data?</h3>
+        <p>Read the privacy policy and search it for the words third parties, advertising, and sell. A trustworthy education tool will say plainly that it does not sell student data or use it for advertising. Wording like we may share data with partners is a sign the door was left open on purpose. When you are not sure, just ask the vendor directly and run the tool through your district's approval process.</p>
+        <h3>Why is children's data privacy such a big deal?</h3>
+        <p>A child has their whole life still ahead of the data being collected about them, so a profile or a stolen identity can follow them and cause harm for years before they are old enough to consent to any of it. Laws like FERPA and COPPA exist for exactly that reason. Children cannot protect themselves here, so the responsibility lands on the adults and institutions around them.</p>
+
+        <h3>Sources</h3>
+        <ul>
+          <li>Internet Safety Labs, <a href="https://internetsafetylabs.org/blog/news-press/isl-research-reveals-96-of-school-apps-send-student-data-to-third-parties/" target="_blank" rel="noopener">"96% of School Apps Send Student Data to Third Parties, Including Advertisers"</a> (2022)</li>
+          <li>Human Rights Watch, <a href="https://www.hrw.org/news/2022/07/12/online-learning-products-enabled-surveillance-children" target="_blank" rel="noopener">"Online Learning Products Enabled Surveillance of Children"</a> (2022)</li>
+          <li>Comparitech, <a href="https://www.comparitech.com/blog/vpn-privacy/us-schools-data-breaches/" target="_blank" rel="noopener">"US schools data breaches"</a></li>
+          <li>U.S. Dept. of Education, <a href="https://studentprivacy.ed.gov/" target="_blank" rel="noopener">Student Privacy (FERPA)</a></li>
+          <li>FTC, <a href="https://www.ftc.gov/legal-library/browse/rules/childrens-online-privacy-protection-rule-coppa" target="_blank" rel="noopener">Children's Online Privacy Protection Rule (COPPA)</a></li>
+        </ul>
+      </div>
+
+      <!-- ARTICLE CTA -->
+      <div class="article-cta container-narrow">
+        <h3>Built to earn your trust.</h3>
+        <p>We built Ivaro so teachers, principals, and district leaders never have to wonder where their students' information ended up. Privacy is the foundation, not the fine print. Join the watchlist for early access.</p>
+        <a class="btn btn-primary" href="index.html#watchlist">Join the Watchlist</a>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container footer-main">
+      <a class="footer-logo-link" href="index.html">
+        <img src="assets/ivaro-logo.png" alt="Ivaro Teach Brilliantly" class="footer-full-logo" />
+      </a>
+      <nav class="footer-links">
+        <a href="index.html#why-ivaro">Why Ivaro</a>
+        <a href="index.html#features">Features</a>
+        <a href="about.html">Our Story</a>
+        <a href="blog.html">Blog</a>
+        <a href="index.html#watchlist">Join the Watchlist</a>
+      </nav>
+    </div>
+    <div class="container footer-copy">
+      <p>© <span id="year"></span> Ivaro · A Precision Learning Labs LLC product · All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
